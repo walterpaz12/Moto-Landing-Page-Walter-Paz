@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root{
+--color-principal: #ff5f6d;
+
+--color-boton-hover: #f75160;
+
+--color-naranja: #ffb270;
+
+--color-negro: #3e3e3e;
+
+--color-general: #999999;
+	
+--color-azul-oscuro: #007bff;	
+	
+--color-gris: #faf9ff;
+	
+--color-azul: #4c5462;
+	
+}
+	
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: var(--color-general);
+}
+
+.header-area.sticky {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+	
+}
+
+.header-area.sticky{
+	background: linear-gradient(to right,var(--color-principal) 0%,var(--color-naranja) 100%);
+	}
+
+
+.header-area.sticky .navbar-default{
+	background-color: #884bdf;
+}
+
+.header-area.sticky .navbar-light .navbar-nav .nav-link{
+	color: var(--color-negro);
+}
+
+.header-area.sticky .navbar-light .navbar-nav .active .nav-link{
+	color: #FFFFFF;
+	opacity: 0.6;
+}
+
+
+.header-area.sticky .navbar-light .navbar-nav .nav-link{
+	color: #FFFFFF;
+}
+.header-area.sticky .navbar-light .navbar-nav .active .nav-link{
+	color: #FFFFFF;
+	opacity: 0.6
+}
+.header-area.sticky .navbar-light .navbar-brand {
+	color: #FFFFFF;
+	opacity: 0.6
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	color: var(--color-negro);
+	font-weight: 400;
+}
+	
+
+#hero{
+	
+	background-image: url("../img/Moto/bg-hero.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: justify;
+	color: #fff;
+	height: 100vh;
+	font-size: 3em;
+	
+}
+
+#hero h1{
+	margin-top: 20%;
+	color: #fff;
+	font-size: 1.3em;
+}
+
+#hero p{
+	font-size: 15px;
+	padding-right: 15%;
+	
+}
+
+
+.btn-download{
+	
+	background-color: var(--color-principal);
+	padding: 1% 5%;
+	border: 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.btn-download:hover{
+	
+	background-color: var(--color-boton-hover);
+		
+}
+
+#home-continue{
+	
+	background-color: #faf9ff;
+	overflow: hidden;
+}
+
+.info-icono{
+	
+	padding: 25% 5%;
+	transition: all 0.3s ease;
+	
+}
+
+#home-continue .info-contenido{
+	
+	overflow: hidden;
+
+}
+
+#home-continue img{
+	
+	margin-right: 10px;
+	
+}
+
+.info-icono:hover{
+	
+	box-shadow: 0 0 30px 0 #eee;
+	transform: translateY(-10px);
+	transition: all 0.3s ease;
+}
+
+#about .btn-video {
+	text-transform: uppercase;
+	background-color: var(--color-principal);
+	padding: 2% 5%;
+	border: 0;
+	font-weight: 700;
+	border-radius: 5%;
+	box-shadow: 0px 0px 10px 0px rgba(247, 81, 96, 0.50);
+	margin-top: 7%;
+	
+	
+}
+
+#about .btn-video:hover {
+	background-color: var(--color-boton-hover) 
+}
+
+.titulos{
+	
+	font-size: 3.5em;
+	font-weight: 600;
+	margin-bottom: 6%;
+}
+
+.section{
+	
+	padding: 8% 0 5%;
+}
+
+#features{
+	
+	background-color: var(--color-gris);
+	text-align: center;
+}
+
+#features .titulos{
+	
+	margin-bottom: 2%;
+}
+
+.feature i{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 100%;
+	border: 1px solid var(--color-principal);
+	display: block;
+	margin: auto;
+	font-size: 30px;
+	color:  var(--color azul);
+	margin-bottom: 3%;
+		
+}
+
+.feature h3{
+	
+	font-size: 20px;
+	margin-bottom: 3%;
+	
+}
+
+.feature:hover{
+	
+	background-color: var(--color-principal);
+	border-radius: 10px;
+	color: #FFFFFF;
+}
+
+.feature{
+	
+	padding: 50px;
+	transition: all 0.2 ease-in;
+	
+}
+
+.feature:hover h3, 
+.feature:hover i{
+	
+	color: #FFFFFF;
+	transition: all 0.2 ease-in;
+}
+
+.feature:hover{
+	
+	box-shadow: 0px 0px 2px 0px #333;
+	
+	
+}
+
+
+#how-it-work{
+	
+	background-image: url("../img/Moto/bg-work.png");
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#how-it-work .tab-content{
+	
+	padding: 40px 0;
+}
+
+#how-it-work .nav-tabs a{
+	
+
+	color:#000;
+	font-size: 20px;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 40px;
+}
+
+#how-it-work .nav-tabs a.active{
+	
+	background-color: var(--color-principal);
+	color: #fff;
+	
+	
+	
+}
+
+
+#how-it-work .nav-tabs{
+	box-shadow: 0px 0px 10px 0px #ddd;
+	background-color: #fff;
+	
+	
+}
+
+
+
+.app-carousel {
+    padding: 0 6%;
+}
+
+.app-carousel .owl-dots {
+    text-align: center;
+}
+.app-carousel .owl-dot {
+    height: 11px;
+    width: 11px;
+    border: 2px solid #a49fba !important;
+    border-radius: 50%;
+    margin: 35px 6px;
+}
+.app-carousel .owl-dot.active {
+    background-color: #fb397d;
+    border: 0 !important;
+}
+
+#subscribe{
+	
+	background-image: url("../img/Moto/bg-subscribe.png");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:top center;
+	
+}
